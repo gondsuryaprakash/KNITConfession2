@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.surya.knitconfession.SearchActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/search_app_bar_layout"
+
+        >
+
+    </include>
+     <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:id="@+id/releative"
+        android:layout_below="@+id/search_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/search_editbox"
+            android:layout_width="290dp"
+            android:layout_height="33dp"
+            android:background="@drawable/edittext"
+            android:hint="Search People by Name..."
+            android:lines="1"
+            android:layout_marginBottom="10dp"
+
+
+            />
+        <ImageButton
+            android:id="@+id/searchbuttonforreult"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="320dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search2"
+            android:scaleType="fitCenter"
+            android:background="@drawable/input2"
+
+
+
+
+
+            />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/releative"
+        android:id="@+id/search_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

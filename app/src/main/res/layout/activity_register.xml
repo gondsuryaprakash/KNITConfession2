@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPink"
+    tools:context="com.example.surya.knitconfession.Register">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+    <LinearLayout
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/layforemail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/logo">
+        <ImageView
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/gmailicon"
+            />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="Email"
+
+        android:layout_gravity="center_vertical"
+        android:id="@+id/email_register"
+        android:inputType="textEmailAddress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/layforPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layforemail">
+    <ImageView
+        android:layout_marginLeft="5dp"
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/passwordicon"
+        />
+
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        android:layout_below="@+id/layforemail"
+        android:layout_alignLeft="@+id/layforemail"
+        android:layout_alignStart="@+id/layforemail"
+
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/layforConPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layforPassword">
+    <ImageView
+        android:layout_marginLeft="5dp"
+
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/passwordicon"
+        />
+
+    <EditText
+        android:id="@+id/confirm_password_register"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_register"
+        android:text="Create New Account"
+        android:padding="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/layforConPassword"
+        android:layout_alignRight="@+id/layforConPassword"
+        android:layout_alignEnd="@+id/layforConPassword"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPink"
+    tools:context="com.example.surya.knitconfession.ResetPassActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/resetactivit_app_bar_layout"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:padding="6dp"
+        android:text="Please give your email addres to reset the password"
+        android:layout_below="@+id/resetbutton_login"
+        android:layout_alignLeft="@+id/layoutoflogin"
+        android:layout_alignStart="@+id/layoutoflogin"
+        android:layout_marginTop="179dp" />
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="350dp"
+        android:id="@+id/resetlayoutoflogin"
+        android:background="@drawable/edittext"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_below="@+id/resetbutton_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gmailicon"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="Email"
+            android:id="@+id/resetemail_login"
+            android:inputType="textEmailAddress"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <Button
+        android:layout_marginLeft="16dp"
+        android:id="@+id/resetbutton_login"
+        android:text="Send Mail"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_width="340dp"
+        android:layout_below="@+id/resetlayoutoflogin"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</LinearLayout>

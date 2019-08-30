@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPink">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/messagesendingprofile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/us"
+        />
+    <TextView
+        android:id="@+id/messagerecivermessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reciver_message_background"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/messagesendingprofile"
+        android:layout_toRightOf="@+id/messagesendingprofile"
+        android:text="Suno Bhai"
+
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:padding="14dp"
+        android:layout_marginTop="3dp"
+        />
+    <TextView
+
+        android:id="@+id/messageofsendermessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_message_background"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Bol bc"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:padding="14dp"
+        android:layout_marginTop="3dp"
+
+        />
+
+</RelativeLayout>

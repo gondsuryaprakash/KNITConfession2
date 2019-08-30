@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.surya.knitconfession.ClickPostActivity">
+    <ImageView
+
+        android:id="@+id/click_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+
+        android:src="@drawable/addpost"
+        android:layout_above="@+id/click_post_description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:background="@drawable/input"
+        android:padding="15dp"
+        android:id="@+id/click_post_description"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Post Description"
+        android:layout_weight="2"
+        android:layout_above="@+id/click_post_editButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="200dp">
+        <Button
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/click_post_editButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/editiconblack"
+            android:textStyle="bold"
+
+            />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/click_post_deleteButton"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/deleteicon"
+
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
